@@ -7,7 +7,7 @@
 
 ## Key Features:
 
-- **Multiple Injection Methods**: Automatically inject Burp Collaborator payloads into:
+- **Multiple Injection Methods**: Automatically inject Burp Collaborator/Interactsh payloads into:
   - Host Headers
   - Common Headers (`User-Agent`, `Referer`, `X-Forwarded-For`, etc.)
   - Absolute URLs
