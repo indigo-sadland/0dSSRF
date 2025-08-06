@@ -54,7 +54,7 @@
 
 Run the tool with the following syntax:
 ```bash
-./0dSSRF.sh -h|-e|-p|-a|-k -l <urls_list.txt> -c <collaborator_id> -s <requests_per_second> [-r <log_directory>] [-k] [-x proxy|--proxy=proxy]
+./0dSSRF.sh -h|-e|-p|-a|-k -l <urls_list.txt> -c <collaborator_id> -s <requests_per_second> [-r <log_directory>] [-K] [-x proxy|--proxy=proxy]
 ```
 
 ## Options:
