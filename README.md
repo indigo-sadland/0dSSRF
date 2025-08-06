@@ -54,10 +54,10 @@
 
 Run the tool with the following syntax:
 ```bash
-./0dSSRF.sh -h|-e|-p|-a|-k -l <urls_list.txt> -c <collaborator_id> -s <requests_per_second> [-r <log_directory>]
+./0dSSRF.sh -h|-e|-p|-a|-k -l <urls_list.txt> -c <collaborator_id> -s <requests_per_second> [-r <log_directory>] [-k] [-x proxy|--proxy=proxy]
 ```
 
-## OPtions:
+## Options:
 
 * -h: Perform Host header injection.
 * -e: Perform common header injection. (From, User-Agent, Referer, etc.)
@@ -68,7 +68,8 @@ Run the tool with the following syntax:
 * -c: Specify your Burp Collaborator ID for callbacks.
 * -s: Set the rate of requests. (e.g., -s 10 for 10 requests per second)
 * -r: Optional, continue from a previous log. (e.g., ./0dSSRF.sh -hepa -l urls_list.txt -c collaborator_id -s requests_per_second -r log_14-09-24_00:18:38)
-
+* -x: Optional, specify proxy for curl
+* -K: Optional, pass -k (insecure SSL) to curl
 Example:
 ```bash
 ./0dSSRF.sh -hepak -l targets.txt -c my-collab-id.oastify.com -s 20
